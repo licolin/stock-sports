@@ -12,7 +12,7 @@ def create_app():
 
 
 def regester_blueprint(app):
-    from app.sports import sport
-    from app.stocks import stock
+    from app.sports.sport import sport
+    from app.stocks.stock import stock
     app.register_blueprint(sport)
     app.register_blueprint(stock)
